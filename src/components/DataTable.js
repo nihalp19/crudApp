@@ -38,7 +38,7 @@ function DataTable() {
     }, [state])
 
 
-    return (
+    return ( 
         <div className={style.container}>
             <div className={style.add_container}>
                 <div className={style.info_container}>
@@ -51,7 +51,7 @@ function DataTable() {
             <div className={style.search_table_container}>
                 <input type="text" placeholder="Search by Name" value={searchByName} onChange={(e) => setSearchByName(e.target.value)} className="search-input" />
             </div>
-            <Table users={users} name={name} age={age} gender={gender} setName={setName} setAge={setAge} setGender={setGender} />
+            <Table users={users} setName={setName} setAge={setAge} setGender={setGender} />
         </div>
     )
 }
